@@ -1,4 +1,4 @@
-# 📄 ChatbotV2 — PDF Question Answering com Groq
+# 📄 Chatbot — PDF Question Answering com Groq
 
 Chatbot em linha de comando projetado para extrair o conteúdo de arquivos PDF e responder perguntas contextuais utilizando o modelo **LLaMA 3.3 (70B)** através da API do Groq.
 
