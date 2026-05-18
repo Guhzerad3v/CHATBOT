@@ -1,15 +1,3 @@
-## ⚠️ Limitações Conhecidas
-
-* **Tamanho do Texto:** O contexto enviado à API é truncado nos primeiros 10.000 caracteres para evitar erros de limite de processamento (Erro 413).
-* **Sem Memória:** O chatbot funciona no modelo *stateless* — cada pergunta é tratada de forma independente, sem histórico das interações anteriores.
-* **Escopo Fechado:** As respostas são geradas com base estrita no conteúdo extraído do PDF fornecido.
-
----
-
-## 📄 LicençaAqui está o conteúdo completo do `README.md` prontinho para você copiar e colar:
-
----
-
 # 📄 ChatbotV2 — PDF Question Answering com Groq
 
 Chatbot em linha de comando projetado para extrair o conteúdo de arquivos PDF e responder perguntas contextuais utilizando o modelo **LLaMA 3.3 (70B)** através da API do Groq.
@@ -50,31 +38,20 @@ Chatbot em linha de comando projetado para extrair o conteúdo de arquivos PDF e
    python chatbot_v2.py
 Instale as dependências necessárias:
 
-Bash
+# Bash
 pip install langchain-core langchain-groq PyPDF2
 Configuração da API Key:
 Configure a sua chave de API do Groq como variável de ambiente (prática recomendada para segurança):
 
-Linux/macOS:
 
-Bash
-export GROQ_API_KEY="sua_chave_aqui"
-Windows (Prompt de Comando):
+# ⚠️ Nota de Segurança: Evite deixar sua chave explicitamente hardcoded na variável os.environ["GROQ_API_KEY"] dentro do código se pretender subir o projeto para um repositório público (como o GitHub).
 
-DOS
-set GROQ_API_KEY=sua_chave_aqui
-Windows (PowerShell):
-
-PowerShell
-$env:GROQ_API_KEY="sua_chave_aqui"
-⚠️ Nota de Segurança: Evite deixar sua chave explicitamente hardcoded na variável os.environ["GROQ_API_KEY"] dentro do código se pretender subir o projeto para um repositório público (como o GitHub).
-
-🎯 Como Usar
+# 🎯 Como Usar
 Coloque o arquivo PDF que deseja analisar na mesma pasta do script.
 
-Certifique-se de que o nome do arquivo no código corresponde ao seu PDF (o padrão configurado é Alan_Turing.pdf):
+# Certifique-se de que o nome do arquivo no código corresponde ao seu PDF (o padrão configurado é Alan_Turing.pdf):
 
-Python
+# Python
 nome_do_arquivo = "Seu_Arquivo.pdf"
 Execute o chatbot:
 
@@ -82,7 +59,7 @@ Bash
 python chatbot_v2.py
 Interaja pelo terminal. Para encerrar a sessão, digite x.
 
-Exemplo de Uso
+# Exemplo de Uso
 Plaintext
 Leitura concluída com sucesso!
 
@@ -92,12 +69,12 @@ Você: Quem foi Alan Turing?
 Processando...
 
 IA: Alan Turing foi um matemático, cientista da computação e criptoanalista britânico, amplamente considerado o pai da ciência da computação teórica e da inteligência artificial...
-⚠️ Limitações Conhecidas
+# ⚠️ Limitações Conhecidas
 Tamanho do Texto: O contexto enviado à API é truncado nos primeiros 10.000 caracteres para evitar erros de limite de processamento (Erro 413).
 
 Sem Memória: O chatbot funciona no modelo stateless — cada pergunta é tratada de forma independente, sem histórico das interações anteriores.
 
 Escopo Fechado: As respostas são geradas com base estrita no conteúdo extraído do PDF fornecido.
 
-📄 Licença
+# 📄 Licença
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
