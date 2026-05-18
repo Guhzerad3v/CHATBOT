@@ -40,8 +40,7 @@ Instale as dependências necessárias:
 
 # Bash
 pip install langchain-core langchain-groq PyPDF2
-Configuração da API Key:
-Configure a sua chave de API do Groq como variável de ambiente (prática recomendada para segurança):
+
 
 
 # ⚠️ Nota de Segurança: Evite deixar sua chave explicitamente hardcoded na variável os.environ["GROQ_API_KEY"] dentro do código se pretender subir o projeto para um repositório público (como o GitHub).
