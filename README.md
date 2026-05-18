@@ -52,9 +52,10 @@ Coloque o arquivo PDF que deseja analisar na mesma pasta do script.
 
 # Python
 nome_do_arquivo = "Seu_Arquivo.pdf"
-Execute o chatbot:
+your_key = A sua chave groq que você pegou anteriormente.
+Execute o chatbot.
 
-Bash
+# Bash
 python chatbot_v2.py
 Interaja pelo terminal. Para encerrar a sessão, digite x.
 
